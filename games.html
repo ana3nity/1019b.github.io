@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<title>kin</title>
+</head>
+
+<body>
+<pre>
+10 Second Ninja X
+2064: Read Only Memories
+Abzû
+Amnesia Collection
+Assassin's Creed IV: Black Flag
+Assassin's Creed Freedom Cry
+Badland <i>4</i> <b>4</b>
+Batman: Arkham Knight
+Batman: The Telltale Series
+The Binding of Isaac: Rebirth <b>2</b>
+Bloodborne
+Borderlands: The Handsome Collection <b>4</b>
+Broforce <i>4</i> <b>4</b>
+Broken Age
+Cel Damage HD <i>4</i>
+Chambara <i>4</i>
+ClusterTruck
+Darksiders II: Deathinitive Edition
+Day of The Tentacle Remastered
+Dead Nation: Apocalypse Edition <b>2</b>
+Deus Ex: Mankind Divided
+Divekick <i>2</i>
+Everybody's Gone to the Rapture
+Firewatch
+Flower
+Grim Fandango Remastered
+Hatoful Boyfriend
+Hotline Miami
+Inside
+Jackbox Party Pack <i>8</i>
+Jackbox Party Pack 2 <i>8</i>
+Journey
+The Last of Us Remastered
+Life Is Strange
+Mirror's Edge Catalyst
+Never Alone <b>2</b>
+Nidhogg <i>2</i>
+OlliOlli2: Welcome to Olliwood <i>4</i>
+Overcooked <i>4</i> <b>4</b>
+Overwatch
+Oxenfree
+Resogun
+Screencheat <i>4</i>
+Sleeping Dogs
+Sound Shapes
+Spelunky <i>4</i> <b>4</b>
+Starwhal <i>4</i>
+Street Fighter V <i>2</i>
+Tales from the Borderlands
+Thomas Was Alone
+Uncharted: The Nathan Drake Collection
+The Unfinished Swan
+Volume
+What Remains of Edith Finch
+</pre>
+
+<script>
+Array.from(document.getElementsByTagName('pre')).map(function(pre){
+	var lines = pre.innerHTML.trim().split('\n');
+	var ul = document.createElement('ul');
+	lines.map(function(line){
+		var li = document.createElement('li');
+		li.innerHTML = line;
+		ul.appendChild(li);
+	});
+	pre.replaceWith(ul);
+});
+</script>
+</body>
