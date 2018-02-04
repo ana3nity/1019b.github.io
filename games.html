@@ -10,8 +10,8 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 body { font: 16px/24px 'Roboto Condensed', sans-serif; }
-b { 
-	font-weight: normal;
+i { 
+	font-style: normal;
 	font-size: 12px;
 	vertical-align: 0.125em;
 	line-height: 0;
@@ -20,8 +20,9 @@ b {
 	border: 1px solid;
 	border-radius: 0.125em;
 	box-shadow: 0 1px 0 #c0c0c0;
+	white-space: nowrap;
 }
-b+b { margin-left: -0.125em; }
+i+i { margin-left: -0.125em; }
 </style>
 </head>
 
@@ -33,23 +34,23 @@ Abzû
 Amnesia Collection
 Assassin's Creed IV: Black Flag
 Assassin's Creed Freedom Cry
-Badland <b>4</b> <b>co-op</b>
+Badland _4p_ _+co_
 Batman: Arkham Knight
 Batman: The Telltale Series
-The Binding of Isaac: Rebirth <b>4</b> <b>co-op</b>
+The Binding of Isaac: Rebirth _4p co_
 Bloodborne
-Borderlands: The Handsome Collection <b>4</b> <b>co-op</b>
-Broforce <b>4</b> <b>co-op</b>
+Borderlands: The Handsome Collection _4p co_
+Broforce _4p_ _+co_
 Broken Age
-Cel Damage HD <b>4</b>
-Chambara <b>4</b>
+Cel Damage HD _4p_
+Chambara _4p_
 Clustertruck
 Darksiders II: Deathinitive Edition
 Day of the Tentacle Remastered
-Dead Nation: Apocalypse Edition <b>2</b> <b>co-op</b>
+Dead Nation: Apocalypse Edition _2p co_
 Deus Ex: Mankind Divided
-Disc Jam <b>4</b>
-Divekick <b>2</b>
+Disc Jam _4p_
+Divekick _2p_
 Don't Starve
 Downwell
 Dust: An Elysian Tail
@@ -62,30 +63,30 @@ Grim Fandango Remastered
 Hatoful Boyfriend
 Hotline Miami
 Inside
-The Jackbox Party Bundle <b>8</b>
+The Jackbox Party Bundle _8p_
 Journey
 The Last of Us Remastered
 Life Is Strange
 Metal Gear Solid V: Ground Zeroes
 Metal Gear Solid V: The Phantom Pain
 Mirror's Edge Catalyst
-NBA 2K16 <b>4</b>
-Never Alone <b>2</b> <b>co-op</b>
-Nidhogg <b>2</b>
-OlliOlli2: Welcome to Olliwood <b>4</b>
-Overcooked <b>4</b> <b>co-op</b>
+NBA 2K16 _4p_
+Never Alone _2p co_
+Nidhogg _2p_
+OlliOlli2: Welcome to Olliwood _4_
+Overcooked _4p_ _+co_
 Overwatch
 Oxenfree
 Resogun
-Screencheat <b>4</b>
+Screencheat _4p_
 Sleeping Dogs
 Sound Shapes
-Spelunky <b>4</b> <b>co-op</b>
-Starwhal <b>4</b>
-Street Fighter V <b>2</b>
+Spelunky _4p_ _+co_
+Starwhal _4p_
+Street Fighter V _2p_
 Tales from the Borderlands
 Thomas Was Alone
-TowerFall Ascension <b>4</b> <b>co-op</b>
+TowerFall Ascension _4p_ _+co_
 Transistor
 Tropico 5
 Uncharted: The Nathan Drake Collection
@@ -97,7 +98,7 @@ What Remains of Edith Finch
 
 <script>
 Array.from(document.getElementsByTagName('pre')).map(function(pre){
-	var lines = pre.innerHTML.trim().split('\n');
+	var lines = pre.innerHTML.trim().replace(/_(.*?)_/g,'<i>$1</i>').split('\n');
 	var ol = document.createElement('ol');
 	lines.map(function(line){
 		var li = document.createElement('li');
