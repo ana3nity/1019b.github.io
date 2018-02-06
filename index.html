@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>games.html</title>
+<title>kin games</title>
 <script src="smartquotes.js"></script>
 <script>smartquotes()</script>
 <style>
@@ -40,7 +40,7 @@ u+u { margin-left: 0; }
 
 
 <!-- BEGIN GAMES LIST -->
-
+<!--
 <div id="pc"><header>PC</header><pre>
 Battlefield 4
 BioShock Infinite
@@ -84,46 +84,39 @@ WildStar
 World of Warcraft [sub]
 World of Warships
 </pre></div>
-
+-->
 <div id="ps4"><header>PS4</header><pre>
-10 Second Ninja X
-2064: Read Only Memories
-Abzû
-Amnesia Collection
-Apotheon [2p]
-Assassin's Creed IV: Black Flag
-Assassin's Creed Freedom Cry
-Badland [4p] [+co]
-Batman: Arkham Knight
-The Binding of Isaac: Rebirth [4p co]
-Bloodborne
-Borderlands: The Handsome Collection [4p co]
-Broforce [4p] [+co]
-Broken Age
-Cel Damage HD [4p]
-Chambara [4p]
-Clustertruck
-Darksiders II
-Day of the Tentacle Remastered
-Dead Nation [2p co]
-Deus Ex: Mankind Divided
-Disc Jam [4p]
-Divekick [2p]
-Don't Starve
-Downwell
-Dust: An Elysian Tail
-Ether One
+10 Second Ninja X #76,16
+Abzû #78,72
+Amnesia Collection #78,27
+Apotheon [2p] #76,26
+Assassin's Creed IV: Black Flag #83,29
+Batman: Arkham Knight #87,89
+The Binding of Isaac: Rebirth [4p co] #88,15
+Bloodborne #92,100
+Borderlands: The Handsome Collection [4p co] #82,49
+Broforce [4p] [+co] #68,12(PC:83,32)
+Broken Age #81,21
+Chambara [4p] #71,10
+Clustertruck #PC:76,14
+Darksiders II #72,28
+Dead Nation [2p co] #74,29
+Deus Ex: Mankind Divided #84,59
+Divekick [2p] #PS3:65,18
+Don't Starve #78,36
+Downwell #80,14
 Everybody's Gone to the Rapture
 Fez
 Firewatch
 Flower
+Fortnite
 Galak-Z: The Dimensional
-Gauntlet [4p co]
+Gauntlet [4p co] #71,21
 Goat Simulator [4p]
 Gone Home
 Grim Fandango Remastered
 Guacamelee! [4p co]
-Hatoful Boyfriend
+Hatoful Boyfriend #72,19
 Helldivers [4p co]
 Hotline Miami
 Infamous Second Son
@@ -145,8 +138,7 @@ Metal Gear Solid V: Ground Zeroes
 Metal Gear Solid V: The Phantom Pain
 Mirror's Edge Catalyst
 NBA 2K16 [4p]
-Neon Chrome [4p co]
-Never Alone [2p co]
+Never Alone [2p co] #73,25
 Nidhogg [2p]
 Nom Nom Galaxy [2p co]
 Oddworld: New ’n’ Tasty!
@@ -155,25 +147,41 @@ Outlast
 Overcooked [4p] [+co]
 Overwatch
 Oxenfree
-Rocket League [4p]
+Pix the Cat [4p]
+Resident Evil
 Resogun
+Rocket League [4p]
 Screencheat [4p]
+Shutshimi [4p co]
+Skulls of the Shogun
+Sky Force Anniversary [2p co]
 Sleeping Dogs
 Sound Shapes
 Spelunky [4p] [+co]
 Sportsfriends [4p]
 Starwhal [4p]
 Street Fighter V [2p]
-Tales from the Borderlands
+Strider
+Strike Vector EX
+Super Meat Boy
+Super Time Force Ultra
+The Swapper
+Tales from the Borderlands #86,8
 Tearaway Unfolded
+This War of Mine: The Little Ones
 Thomas Was Alone
+Titan Souls
 TowerFall Ascension [4p] [+co]
 Transistor
 Tropico 5
 Uncharted: The Nathan Drake Collection
-The Unfinished Swan
+The Unfinished Swan #83,6
+Until Dawn
+Valiant Hearts: The Great War
+Velocity 2X
+Virginia
 Volume
-What Remains of Edith Finch
+What Remains of Edith Finch #88,65
 &hellip;and more!
 </pre></div>
 
@@ -210,7 +218,8 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 	var lines = pre.innerHTML.trim().replace(/\[(.*?)\]/g,'<u>$1</u>').split('\n');
 	var ol = document.createElement('ol');
 	lines.map(function(line){
-		if (line[0] == '#') return;
+		line = line.split('#',1)[0].trim();
+		if (!line) return;
 		var li = document.createElement('li');
 		li.innerHTML = line;
 		ol.appendChild(li);
