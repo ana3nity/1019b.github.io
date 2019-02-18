@@ -32,16 +32,6 @@ body {
 	background-size: cover;
 }
 
-a {
-	text-decoration: none;
-	font-weight: bold;
-}
-
-a:hover,
-a:active {
-	text-decoration: underline;
-}
-
 .icon {
 	padding: 0;
 }
@@ -56,7 +46,7 @@ h1 {
 	margin: 40px 40px -20px;
 	height: 150px;
 	width: 150px;
-	background: rgba(0,0,0,0.5) url(logo-white.png);
+	background: rgba(255,255,255,0.25) url(logo-black.png);
 	background-size: 150px 150px;
 	border-radius: 50%;
 	text-indent: -1000em;
@@ -75,21 +65,29 @@ ul {
 header,
 span {
 	display: inline;
-	margin-right: 3px;
-	padding: 0 3px;
+	margin-right: 1px;
+	padding: 1px 4px;
 	background: rgba(0,0,0,0.5);
 	white-space: nowrap;
-	border-radius: 1px;
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+	border-radius: 2px;
+}
+
+a {
+	color: #ffe080;
+	text-decoration: none;
+}
+
+a:hover span,
+a:active span {
+	background: rgba(0,0,0,0.75);
+	box-shadow: 0 0 0 1px #ffe080;
 }
 
 header {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
-	margin-left: -40px;
-	padding-left: 23px;
-	border-radius: 0 1px 1px 0;
+	margin-left: -20px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -106,11 +104,11 @@ header {
 	<div>
 		<ul>
 			<li>
-				<span><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541">1019 B St, Hayward, CA</a></span>
+				<a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><span>1019 B St, Hayward, CA</span></a>
 			</li><li>
-				<span><a href="tel:15106003613">510.600.3613</a></span>
-				<span><a href="mailto:info@kin.fyi">info@kin.fyi</a></span>
-				<span><a href="https://discord.gg/VAHctnc">discord</a></span>
+				<a href="tel:15106003613"><span>510.600.3613</span></a>
+				<a href="mailto:info@kin.fyi"><span>info@kin.fyi</span></a>
+				<a href="https://discord.gg/VAHctnc"><span>discord</span></a>
 			</li>
 		</ul>
 		<header class="hours">Hours</header>
@@ -136,7 +134,12 @@ header {
 		</ul>
 		<header class="games">Games</header>
 		<ul>
-			<li><span><a href="beta">PC / PS4 / Wii U</a></span></li>
+			<li><a id="beta" href="beta">
+				<span>PC</span>
+				<span>PS4</span>
+				<span>Switch</span>
+				<span>Wii U</span>
+			</a></li>
 		</ul>
 	</div>
 
