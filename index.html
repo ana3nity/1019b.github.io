@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>kin</title>
+<script src="https://kit.fontawesome.com/4766bb5ebf.js" crossorigin="anonymous"></script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
@@ -29,7 +30,7 @@ body {
 }
 
 div {
-	background: rgba(255,128,0,0.5) url(logo-white.png) 40% 40% no-repeat;
+	background: rgba(255,128,0,0.7) url(logo-white.png) 40% 40% no-repeat;
 	background-size: 150px 150px;
 	margin: 30px;
 	height: 200px;
@@ -42,7 +43,7 @@ div > h1 {
 }
 
 ul {
-	padding: 150px 0 0 50px;
+	padding: 145px 0 0 50px;
 	white-space: nowrap;
 }
 
@@ -57,21 +58,30 @@ li:first-child {
 
 li a {
 	color: #fff;
-	background: rgba(128,64,0,0.5);
+	background: rgba(255,128,0,0.7);
 	text-decoration: none;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
-li span {
+li>span {
 	color: #ff8000;
 	background: #fff;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
+li a i {
+	margin-right: 1px;
+	font-style: normal;
+}
+
+li a span {
+	margin: 0 1px;
+}
+
 li a:hover,
 li a:focus {
-	background: rgba(128,64,0,1);
+	background: rgba(192,64,0,0.7);
 }
 
 li a+a {
@@ -85,10 +95,18 @@ li a+a {
 <div>
 	<h1>kin</h1>
 	<ul>
-		<li><span>reopening soon! stay tuned</span></li>
-		<li><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541">1019 B St, Hayward, CA</a></li>
-		<li><a href="tel:+15104043624">510.404.3624</a> <a href="mailto:info@kin.fyi">info@kin.fyi</a></li>
-		<li><a href="https://discord.gg/VAHctnc">join our discord</a></li>
+		<li><span><b>reopening soon!</b> stay tuned</span></li>
+		<li>
+			<a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><i class="fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a>
+		</li>
+		<li>
+			<a href="tel:+15104043624"><i class="fa-solid fa-square-phone"></i> 510<span>.</span>404<span>.</span>3624</a>
+			<!-- <a href="mailto:info@kin.fyi"><i class="fas fa-envelope-square"></i> info<span>@</span>kin.fyi</a> -->
+			<a href="https://www.instagram.com/kin.hayward/"><i class="fa-brands fa-instagram"></i> kin.hayward</a>
+		</li>
+		<li>
+			<a href="https://discord.gg/VAHctnc"><i>join our </i><i class="fa-brands fa-discord"></i> discord</a>
+		</li>
 	</ul>
 </div>
 </body>
