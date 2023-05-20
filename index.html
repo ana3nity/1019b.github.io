@@ -5,8 +5,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>kin</title>
-<script src="smartquotes.js"></script>
-<script>smartquotes()</script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
@@ -18,135 +16,81 @@
 	outline: none;
 	list-style: none;
 	color: inherit;
-	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	 -webkit-text-size-adjust: 100%;
 }
 
 body {
 	padding-bottom: 20px;
-	font-size: 15px;
-	line-height: 24px;
-	color: #fff;
+	font: 16px/30px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #000;
 	background: #000 url(bg.jpg) center bottom fixed no-repeat;
 	background-size: cover;
 }
 
-.icon {
-	padding: 0;
-}
-
-.icon a {
-	display: inline-block;
-	width: 18px;
-	text-align: center;
-}
-
-h1 {
-	margin: 40px 40px -20px;
-	height: 150px;
-	width: 150px;
-	background: rgba(255,255,255,0.25) url(logo-black.png);
-	background-size: 150px 150px;
-	border-radius: 50%;
-	text-indent: -1000em;
-	overflow: hidden;
-}
-
 div {
-	width: 560px;
-	padding: 0 40px 20px;
+	background: rgba(255,128,0,0.5) url(logo-white.png) 40% 40% no-repeat;
+	background-size: 150px 150px;
+	margin: 30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+}
+
+div > h1 {
+	display: none;
 }
 
 ul {
-	margin-bottom: 20px;
-}
-
-header,
-span {
-	display: inline;
-	margin-right: 1px;
-	padding: 1px 4px;
-	background: rgba(0,0,0,0.5);
+	padding: 150px 0 0 50px;
 	white-space: nowrap;
-	border-radius: 2px;
 }
 
-a {
-	color: #ffe080;
+li>* {
+	padding: 3px 6px;
+	border-radius: 3px;
+}
+
+li:first-child {
+	margin-bottom: 10px;
+}
+
+li a {
+	color: #fff;
+	background: rgba(128,64,0,0.5);
 	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
-a:hover span,
-a:active span {
-	background: rgba(0,0,0,0.75);
-	box-shadow: 0 0 0 1px #ffe080;
+li span {
+	color: #ff8000;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-header {
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: bold;
-	margin-left: -20px;
+li a:hover,
+li a:focus {
+	background: rgba(128,64,0,1);
 }
 
-@media only screen and (max-width: 640px) {
-	div {
-		width: auto;
-	}
+li a+a {
+	margin-left: 1px;
 }
 
 </style>
 </head>
 
 <body>
+<div>
 	<h1>kin</h1>
-	<div>
-		<ul>
-			<li>
-				<a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><span>1019 B St, Hayward, CA</span></a>
-			</li><li>
-				<a href="tel:15106003613"><span>510.600.3613</span></a>
-				<a href="mailto:info@kin.fyi"><span>info@kin.fyi</span></a>
-				<a href="https://discord.gg/VAHctnc"><span>discord</span></a>
-			</li>
-		</ul>
-		<header class="hours">Hours</header>
-		<p><span>kin games is currently closed due to the continued uncertainties&nbsp;<br>
-			&nbsp;from the COVID pandemic and pending business restructuring!&nbsp;<br>
-			&nbsp;Please stay tuned to our Facebook page or Discord communities.&nbsp;</span>
-			<br><br></p>
-<!-- 		<ul>
-			<li><span>Mon/Tue — closed</span></li>
-			<li><span>Wed/Thu/Sun — 1pm to 10pm</span></li>
-			<li><span>Fri/Sat — 1pm to 12am</span></li>
-		</ul> -->
-		<header class="rates">Rates</header>
-		<ul>
-			<li><span>$5/hr</span> <span>$9/2hr</span> <span>$12/3hr</span></li>
-			<li><span>$15 day pass</span> <span>$45 month pass</span></li>
-			<li><span>additional packages/deals available</span></li>
-		</ul>
-		<header class="specs">Specs</header>
-		<ul>
-			<li>
-				<span>GeForce GTX 780</span>
-				<span>AMD FX-6300</span>
-				<span>BenQ RL2455HM</span>
-				<span>SteelSeries 6Gv2 + Sensei + Siberia v2</span>
-			</li>
-		</ul>
-		<header class="games">Games</header>
-		<ul>
-			<li><a id="beta" href="beta">
-				<span>PC</span>
-				<span>PS4</span>
-				<span>Switch</span>
-				<span>Wii U</span>
-			</a></li>
-		</ul>
-	</div>
-
+	<ul>
+		<li><span>reopening soon! stay tuned</span></li>
+		<li><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541">1019 B St, Hayward, CA</a></li>
+		<li><a href="tel:+15104043624">510.404.3624</a> <a href="mailto:info@kin.fyi">info@kin.fyi</a></li>
+		<li><a href="https://discord.gg/VAHctnc">join our discord</a></li>
+	</ul>
+</div>
 </body>
 
 </html>
