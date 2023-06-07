@@ -32,7 +32,7 @@ body {
 h1 {
 	background: rgba(255,128,0,0.5) url(logo-white.png) 40% 40% no-repeat;
 	background-size: 150px 150px;
-	margin: 30px;
+	margin: 30px 30px -50px;
 	height: 200px;
 	width: 200px;
 	border-radius: 100%;
@@ -42,17 +42,13 @@ h1 {
 }
 
 ul {
-	margin: -80px 0 40px 80px;
+	margin: 0 0 15px 80px;
 	white-space: nowrap;
 }
 
 li>* {
 	padding: 3px 6px 4px;
 	border-radius: 4px;
-}
-
-li.pad {
-	margin-top: 15px;
 }
 
 li a {
@@ -74,8 +70,11 @@ li>span {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-li a i {
+li i {
 	margin: 0 1px;
+}
+.three li i {
+	margin: 0 2px 0 0;
 }
 
 </style>
@@ -86,10 +85,13 @@ li a i {
 	<h1>kin</h1>
 	<ul>
 		<li><span>reopening <b>Friday, June 16</b></span></li>
+		<!-- <li><span>open Fri–Sun, 10am–10pm</span></li> -->
 		<li>
 			<a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541" target="_blank"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a>
 		</li>
-		<li class="pad">
+	</ul>
+	<ul>
+		<li>
 			<a href="mailto:kin@info.fyi" target="_blank">email us at <i class="fa-regular fa-envelope"></i> kin@info.fyi</a>
 		</li>
 		<li>
@@ -98,11 +100,13 @@ li a i {
 		<li>
 			<a href="https://discord.gg/VAHctnc" target="_blank">join our <i class="fa-brands fa-discord"></i> Discord</a>
 		</li>
-		<li class="pad">
-			<a href="https://tinyurl.com/kincafe-calendar" target="_blank"><i class="fa-regular fa-calendar"></i> &nbsp;event calendar</a>
+	</ul>
+	<ul class="three">
+		<li>
+			<a href="https://tinyurl.com/kincafe-calendar" target="_blank"><i class="fa-regular fa-calendar"></i> event calendar</a>
 		</li>
 		<li>
-			<a href="https://tinyurl.com/kincafe-boardgameslibrary" target="_blank"><i class="fa-solid fa-chess-board"></i> &nbsp;board games</a>
+			<a href="https://tinyurl.com/kincafe-boardgameslibrary" target="_blank"><i class="fa-solid fa-chess-board"></i> board games</a>
 		</li>
 	</ul>
 </div>
