@@ -22,8 +22,8 @@
 }
 
 body {
-	padding-bottom: 20px;
-	font: 16px/30px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 20px 40px 40px;
+	font: 16px/24px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #000;
 	background: #000 url(bg.jpg) center bottom fixed no-repeat;
 	background-size: cover;
@@ -32,7 +32,7 @@ body {
 h1 {
 	background: rgba(255,128,0,0.5) url(logo-white.png) 40% 40% no-repeat;
 	background-size: 150px 150px;
-	margin: 30px 30px -50px;
+	margin-bottom: -50px;
 	height: 200px;
 	width: 200px;
 	border-radius: 100%;
@@ -42,8 +42,38 @@ h1 {
 }
 
 ul {
-	margin: 0 0 15px 80px;
+	margin: 0 0 16px 50px;
+	line-height: 30px;
 	white-space: nowrap;
+}
+
+header {
+	float: left;
+	margin: 0 0 24px -10px;
+}
+
+div {
+	margin: 20px 0 20px 50%;
+	padding: 20px 20px 8px;
+	color: #fff;
+	background: rgba(0,0,0,0.8);
+	border-radius: 4px;
+	box-shadow: 0 0 2px #fff;
+}
+
+h2, p {
+	font-size: inherit;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p { 
+	color: #c0c0c0;
 }
 
 li>* {
@@ -53,7 +83,7 @@ li>* {
 
 li a {
 	color: #fff;
-	background: rgba(192,64,0,0.7);
+	background: rgba(192,64,0,0.8);
 	text-decoration: none;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
@@ -61,43 +91,77 @@ li a {
 
 li a:hover,
 li a:focus {
-	background: rgba(96,32,0,0.7);
+	background: rgba(96,32,0,0.8);
 }
-
 li>span {
-	color: #ff8000;
 	background: #fff;
+	color: #c04000;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
-
 li i {
 	margin: 0 1px;
 }
-.three li i {
+.bullet li i {
 	margin: 0 2px 0 0;
+}
+
+@media only screen and (max-width: 750px) { 
+	body {
+		padding-left: 20px;
+	}
+	div { 
+		clear: left;
+		margin-left: 40px;
+	} 
+}
+
+@media only screen and (max-width: 400px) { 
+	body { 
+		padding-left: 0px;
+	} 
 }
 
 </style>
 </head>
 
 <body>
-<div>
+<header>
 	<h1>kin</h1>
 	<ul>
 		<li><span>reopening <b>Friday, June 16</b></span></li>
 		<!-- <li><span>open Fri–Sun, 10am–10pm</span></li> -->
-		<li><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541" target="_blank"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a></li>
+		<li><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a></li>
 	</ul>
 	<ul>
-		<li><a href="mailto:kin@info.fyi" target="_blank">email us at <i class="fa-regular fa-envelope"></i> kin@info.fyi</a></li>
+		<li><a href="mailto:kin@info.fyi">email us at <i class="fa-regular fa-envelope"></i> kin@info.fyi</a></li>
 		<li><a href="sms:+15104043624">text us at <i class="fa-regular fa-comment"></i> (510) 404-3624</a>
-		<li><a href="https://www.instagram.com/kin.hayward/" target="_blank">follow us on <i class="fa-brands fa-instagram"></i> Instagram</a></li>
-		<li><a href="https://discord.gg/VAHctnc" target="_blank">join our <i class="fa-brands fa-discord"></i> Discord</a></li>
+		<li><a href="https://www.instagram.com/kin.hayward/">follow us on <i class="fa-brands fa-instagram"></i> Instagram</a></li>
+		<li><a href="https://discord.gg/VAHctnc">join our <i class="fa-brands fa-discord"></i> Discord</a></li>
+		<li><a href="https://tinyurl.com/kincafe-customerfeedback">send us feedback</a></li>
 	</ul>
-	<ul class="three">
-		<li><a href="https://tinyurl.com/kincafe-calendar" target="_blank"><i class="fa-regular fa-calendar"></i> event calendar</a></li>
-		<li><a href="https://tinyurl.com/kincafe-boardgameslibrary" target="_blank"><i class="fa-solid fa-chess-board"></i> board games</a></li>
+	<ul class="bullet">
+		<li><a href="https://tinyurl.com/kincafe-calendar"><i class="fa-regular fa-calendar"></i> event calendar</a> <a href="https://tinyurl.com/kincafe-eventrequest">book an event</a></li>
+		<li><a href="https://tinyurl.com/kincafe-boardgameslibrary"><i class="fa-solid fa-chess-board"></i> board games</a> <a href="https://tinyurl.com/kincafe-reservationform">reserve a table</a></li></li>
+		<li><a href="https://airtable.com/shrlGuveLQaZbHNhC"><i class="fa-solid fa-computer-mouse" style="padding:0 1px"></i> PC games</a> <a href="https://tinyurl.com/kincafe-reservationform">reserve a station</a></li>
 	</ul>
+</header>
+<div>
+	<h2>Our Space</h2>
+	<p>Access to our venue and full board game collection is $5 per person, with a group discount of 15% for 6+ people. Come by, find a table, and stay for as long as you’d like.</p>
+	<p>Not looking to play games? That’s okay too, we make a great study &amp; work space with our tables and wifi.</p>
+	<p>The venue fee ($5) also grants you a complimentary hour of PC/console time for the same day (expires at closing).</p>
+	<p>PCs and tables can be reserved ahead of time for a $5 fee, which is only refundable with more than 24-hour notice.</p>
+</div>
+<div>
+	<h2>Digital Entertainment</h2>
+	<p>Purchase PC/console time at $5/hr. Hours added to your account never expire, so you can come back any time to keep playing.</p></p>
+	<p>Our Tier 1 PCs have AMD Ryzen 5 5600X processors, GeForce RTX 4070s, and 144Hz 2K monitors.</p>
+	<p>We also have a set of Tier 2 PCs with GTX 780s and 1080p monitors that cost less to use, a great option if you don’t need the extra power or just want to browse the web.</p>
+</div>
+<div>
+	<h2>Food &amp; Drink</h2>
+	<p>No outside food or drink is allowed, with the exception of water.</p></p>
+	<p>Our food menu is available from 11am to 9pm, while snacks and drinks are available any time we’re open. Beer &amp; wine is served from 4pm to close.</p>
 </div>
 </body>
 
