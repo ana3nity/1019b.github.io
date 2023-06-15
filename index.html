@@ -111,6 +111,10 @@ li i {
 	margin: 0 2px 0 0;
 }
 
+.menu.mobile {
+	display: none;
+}
+
 @media only screen and (max-width: 750px) { 
 	body {
 		padding-left: 20px;
@@ -121,10 +125,16 @@ li i {
 	} 
 }
 
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 500px) { 
 	body { 
 		padding-left: 0px;
 	} 
+	.menu {
+		display: none;
+	}
+	.menu.mobile {
+		display: inline;
+	}
 }
 
 </style>
@@ -154,19 +164,19 @@ li i {
 	<h2>Our Space</h2>
 	<p>Access to our venue and full board game collection is <b>$5/person</b>, with a 15% discount for groups of 6+ people. Come by, find a table, and stay for as long as you’d like.</p>
 	<p>Not looking to play games? That’s okay too, we make a great study &amp; work space with our tables and wifi.</p>
-	<p>The venue fee ($5) also grants you a complimentary hour of PC/console time for the same day (expires at closing).</p>
+	<p>The venue fee ($5) also grants you a complimentary hour of PC/console access for the same day (expires at closing).</p>
 	<p>PCs and tables can be reserved ahead of time for a $5 fee, which is only refundable with more than 24-hour notice.</p>
 </div>
 <div>
 	<h2>Digital Entertainment</h2>
-	<p>Purchase PC/console time at <b>$5/hour</b>. Hours added to your account never expire, so you can come back any time to keep playing.</p>
+	<p>Purchase PC time for <b>$5/hour</b>. Hours added to your account never expire, so you can come back any time to keep playing.</p>
 	<p>Our Tier 1 PCs have AMD Ryzen 5 5600X processors, GeForce RTX 4070s, and 144Hz 2K monitors.</p>
 	<p>We also have a set of Tier 2 PCs with GTX 780s and 1080p monitors that cost less to use, a great option if you don’t need the extra power or just want to browse the web.</p>
 </div>
 <div>
 	<h2>Food &amp; Drink</h2>
-	<p>Our food menu is available from <b>11am–9pm</b>, while snacks and drinks are available any time we’re open. Beer &amp; wine is served from 4pm to close.</p>
-	<p>No outside food or drink is allowed, with the exception of water.</p>
+	<p>Our <a class="menu" href="menu.pdf">food menu</a><a class="menu mobile" href="menu-mobile.pdf">food menu</a> is available from <b>11am to 9pm</b>, while snacks and drinks are available at all hours. Beer &amp; wine is served from 4pm to close.</p>
+	<p>No outside food or drink is allowed except water.</p>
 </div>
 </body>
 
