@@ -38,7 +38,7 @@ h1 {
 	border-radius: 100%;
 	text-indent: -1000em;
 	overflow: hidden;
-	box-shadow: 0 0 1px #fff;
+	box-shadow: 0 0 2px rgba(255,255,255,0.5);
 }
 
 ul {
@@ -56,10 +56,10 @@ div {
 	margin: 20px 0 20px 50%;
 	padding: 20px 20px 8px;
 	color: #fff;
-	background: rgba(0,0,0,0.8);
-	border-radius: 4px;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8) 50%);
+	border-radius: 5px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-	box-shadow: 0 0 1px #fff;
+	box-shadow: 0 0 2px rgba(255,255,255,0.5), inset 0 1px 1px rgba(0,0,0,0.5);
 }
 
 h2, p {
@@ -70,8 +70,7 @@ h2, p {
 
 h2 {
 	text-transform: uppercase;
-	letter-spacing: 1px;
-	white-space: nowrap;
+	letter-spacing: 2px;
 }
 
 p { 
@@ -86,12 +85,12 @@ p b {
 
 li>* {
 	padding: 3px 6px 4px;
-	border-radius: 4px;
+	border-radius: 5px;
 }
 
 li a {
 	color: #fff;
-	background: rgba(192,96,0,0.8);
+	background: linear-gradient(rgba(192,96,0,0.7),rgba(192,96,0,0.9));
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
@@ -99,17 +98,20 @@ li a {
 
 li a:hover,
 li a:focus {
-	background: rgba(128,64,0,0.9);
+	background: linear-gradient(rgba(128,64,0,0.8),rgb(128,64,0));
 }
+
 li>span {
 	background: #fff;
 	color: #c06000;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
+
 li i {
 	margin: 0 1px;
 }
-.bullet li i {
+
+i.lead {
 	margin: 0 2px 0 0;
 }
 
@@ -145,21 +147,21 @@ li i {
 <body>
 <header>
 	<h1>kin</h1>
-	<ul>
+	<ul class="one">
 		<li><span>open Fri–Sun, 10am–10pm</span></li>
 		<li><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a></li>
 	</ul>
-	<ul>
+	<ul class="two">
 		<li><a href="mailto:info@kin.fyi">email us at <i class="fa-regular fa-envelope"></i> info@kin.fyi</a></li>
 		<li><a href="sms:+15104043624">text us at (510) 404-3624</a>
 		<li><a href="https://www.instagram.com/kin.hayward/">follow us on <i class="fa-brands fa-instagram"></i> Instagram</a></li>
 		<li><a href="https://discord.gg/VAHctnc">join our <i class="fa-brands fa-discord"></i> Discord</a></li>
-		<li><a href="https://tinyurl.com/kincafe-customerfeedback">send us <i class="fa-regular fa-comment-dots"></i> feedback</a></li>
 	</ul>
-	<ul class="bullet">
-		<li><a href="https://tinyurl.com/kincafe-boardgameslibrary"><i class="fa-solid fa-chess-board"></i> board games</a> <a href="https://tinyurl.com/kincafe-reservationform">reserve a table</a></li>
-		<li><a href="https://airtable.com/shrlGuveLQaZbHNhC"><i class="fa-solid fa-computer-mouse" style="padding:0 1px"></i> PC games</a> <a href="https://tinyurl.com/kincafe-reservationform">reserve a station</a></li>
-		<li><a href="https://tinyurl.com/kincafe-calendar"><i class="fa-regular fa-calendar"></i> event calendar</a> <a href="https://tinyurl.com/kincafe-eventrequest">book an event</a></li>
+	<ul>
+		<li><a href="https://tinyurl.com/kincafe-boardgameslibrary"><i class="lead fa-solid fa-chess-board"></i> board games</a> <a href="https://tinyurl.com/kincafe-reservationform">reserve a table</a></li>
+		<li><a href="https://tinyurl.com/kincafe-pcgameslibrary"><i class="lead fa-solid fa-computer-mouse" style="padding:0 1px"></i> PC games</a> <a href="https://tinyurl.com/kincafe-reservationform">reserve a station</a></li>
+		<li><a href="https://tinyurl.com/kincafe-calendar"><i class="lead fa-regular fa-calendar"></i> event calendar</a> <a href="https://tinyurl.com/kincafe-eventrequest">book an event</a></li>
+		<li><a href="https://tinyurl.com/kincafe-customerfeedback">send us <i class="fa-regular fa-comment-dots"></i> feedback</a></li>
 	</ul>
 </header>
 <div>
@@ -176,7 +178,7 @@ li i {
 	<p>We also have a set of Tier 2 PCs with GTX 780s and 1080p monitors that cost less to use, a great option if you don’t need the extra power or just want to browse the&nbsp;web.</p>
 </div>
 <div>
-	<h2>Food &amp; Drink</h2>
+	<h2>Food&nbsp;&amp;&nbsp;Drink</h2>
 	<p>Our <a class="menu" href="menu.pdf">food menu</a><a class="menu mobile" href="menu-mobile.pdf">food menu</a> is available from <b>11am–9pm</b>, while snacks and drinks are available at all hours. Beer &amp; wine is served from 4pm to&nbsp;close.</p>
 	<p>No outside food or drink is allowed except&nbsp;water.</p>
 </div>
