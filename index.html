@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>kin</title>
+<title>kin/games</title>
 <script src="https://kit.fontawesome.com/4766bb5ebf.js" crossorigin="anonymous"></script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
@@ -21,90 +21,121 @@
 	 -webkit-text-size-adjust: 100%;
 }
 
+a 		{ color: #804000; }
+a:hover,
+a:focus { color: #c06000; }
+
 body {
-	padding: 20px 40px 40px;
+	padding: 0 10px;
 	font: 16px/24px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #000;
 	background: #000 url(bg.jpg) center fixed no-repeat;
 	background-size: cover;
 }
 
+header {
+	height: 150px;
+	margin: 0 -10px;
+	padding: 0 10px;
+	overflow: visible;
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6));
+}
+
 h1 {
-	background: rgba(255,128,0,0.5) url(logo-white.png) 40% 40% no-repeat;
-	background-size: 150px 150px;
-	margin-bottom: -50px;
-	height: 200px;
-	width: 200px;
-	border-radius: 100%;
+	background: red;
+	background: url(logo-white-ext.png) left no-repeat;
+	background-size: 360px 190px;
+	height: 190px;
+	margin-bottom: -40px;
 	text-indent: -1000em;
 	overflow: hidden;
-	box-shadow: 0 0 2px rgba(255,255,255,0.5);
+}
+
+header h2 {
+	display: none;
+}
+
+header ul {
+	color: rgba(255,255,255,0.9);
+	margin: -150px 0 0 190px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.address {
+	margin-top: 70px;
+}
+
+.address a {
+	background: #fff;
+	text-decoration: none;
+	padding: 3px 6px 4px;
+	border-radius: 5px;
+	text-shadow: none;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+menu {
+	float: left;
+	margin: 36px 0 0 190px;
 }
 
 ul {
-	margin: 0 0 16px 50px;
+	margin-bottom: 16px;
 	line-height: 30px;
 	white-space: nowrap;
 }
 
-header {
-	float: left;
-	margin: 0 0 24px -10px;
+menu li>span {
+	color: rgba(255,255,255,0.8);
+	padding: 0;
+}
+
+main {
+	margin: -110px 30px 0 50%;
 }
 
 div {
-	margin: 20px 0 20px 50%;
+	margin-bottom: 20px;
 	padding: 20px 20px 8px;
-	color: #fff;
-	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8) 50%);
+	color: #404040;
+	background: linear-gradient(rgba(255,255,255,0.9),rgba(224,224,224,0.9) 100px);
 	border-radius: 5px;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-	box-shadow: 0 0 2px rgba(255,255,255,0.5), inset 0 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 
 h2, p {
 	font-size: inherit;
-	line-height: 24px;
 	margin-bottom: 12px;
 }
 
-h2 {
+div h2 {
 	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-p { 
-	color: #c0c0c0;
+	letter-spacing: 1px;
 }
 
 p a,
 p b {
 	font-weight: bold;
-	color: #fff;
+	white-space: nowrap;
 }
 
-li>* {
+menu li>* {
 	padding: 3px 6px 4px;
 	border-radius: 5px;
 }
 
-li a {
-	color: #fff;
-	background: linear-gradient(rgba(192,96,0,0.7),rgba(192,96,0,0.9));
+menu li a {
+	color: rgba(255,255,255,0.9);
+	background: linear-gradient(135deg,rgba(32,32,32,0.9),rgba(128,64,0,0.7));
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
-li a:hover,
-li a:focus {
-	background: linear-gradient(rgba(128,64,0,0.8),rgb(128,64,0));
-}
-
-li>span {
-	background: #fff;
-	color: #c06000;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+menu li a:hover,
+menu li a:focus {
+	color: #fff;
+	background: rgba(192,96,0,0.9);
 }
 
 li i {
@@ -119,26 +150,35 @@ i.lead {
 	display: none;
 }
 
-@media only screen and (max-width: 750px) { 
-	body {
-		padding-left: 20px;
+@media only screen and (max-width: 1000px) { 
+	header {
+		height: 130px;
+		margin-bottom: 20px;
+		padding-left: 15px;
 	}
-	div { 
+	header ul 	{ margin-left: 125px; }
+	h1 			{ background-size: 240px 127px; }
+	menu 		{ margin-left: 130px; }
+}
+
+@media only screen and (max-width: 750px) { 
+	body 		{ padding: 0; }
+	header ul 	{ margin: -180px 0 0 15px; }
+	.address	{ margin-top: 100px; }
+	menu 		{ margin-left: 20px; }
+	main {
 		clear: left;
-		margin-left: 40px;
-	} 
+		margin: 0;
+		padding: 2px 0 0;
+	}
+	main div {
+		border-radius: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) { 
-	body { 
-		padding-left: 0px;
-	} 
-	.menu {
-		display: none;
-	}
-	.menu.mobile {
-		display: inline;
-	}
+	.menu 			{ display: none; }
+	.menu.mobile 	{ display: inline; }
 }
 
 </style>
@@ -147,11 +187,14 @@ i.lead {
 <body>
 <header>
 	<h1>kin</h1>
-	<ul class="one">
-		<li><span>open Fri–Sun, 10am–10pm</span></li>
-		<li><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a></li>
+	<h2>board game &amp; PC cafe</h2>
+	<ul>
+		<li>open <b>Fri–Sun</b> </span><span>from <b>10am–10pm</b></li>
+		<li class="address"><a href="https://www.google.com/maps/place/1019+B+St,+Hayward,+CA+94541"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a></li>
 	</ul>
-	<ul class="two">
+</header>
+<menu>
+	<ul>
 		<li><a href="mailto:info@kin.fyi">email us at <i class="fa-regular fa-envelope"></i> info@kin.fyi</a></li>
 		<li><a href="sms:+15104043624">text us at (510) 404-3624</a>
 		<li><a href="https://www.instagram.com/kin.hayward/">follow us on <i class="fa-brands fa-instagram"></i> Instagram</a></li>
@@ -163,25 +206,24 @@ i.lead {
 		<li><a href="https://tinyurl.com/kincafe-calendar"><i class="lead fa-regular fa-calendar"></i> event calendar</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoguYJ8xxRt-LQlENzorQ6ZNOnU7S_qk2ox7KXygLenD4vpQ/viewform">book an event</a></li>
 		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScbomZLH8Zr-2TjQEZdkS4BURaPA36GAXKHBNn8-TUngbI3ww/viewform">send us <i class="fa-regular fa-comment-dots"></i> feedback</a></li>
 	</ul>
-</header>
-<div>
-	<h2>Our Space</h2>
-	<p>Access to our venue and full board game collection is <b>$5/person</b>, with a 15% discount for groups of 6+ people. Come by, find a table, and stay for as long as you’d&nbsp;like.</p>
-	<p>Not looking to play games? That’s okay too, we make a great study &amp; work space with our tables and&nbsp;wifi.</p>
-	<p>The venue fee ($5) also grants you a complimentary hour of PC/console access for the same day (expires at&nbsp;closing).</p>
-	<p>PCs and tables can be reserved ahead of time for a $5 fee, which is only refundable with more than 24hr&nbsp;notice.</p>
-</div>
-<div>
-	<h2>Digital Entertainment</h2>
-	<p>Purchase PC time for <b>$5/hour</b> — these hours stay on your account so you can come back any time to keep playing. You can also purchase a day pass for&nbsp;$15.</p>
-	<p>Our Tier 1 PCs have AMD Ryzen 5 5600X processors, GeForce RTX 4070s, and 144Hz 2K&nbsp;monitors.</p>
-	<p>We also have a set of Tier 2 PCs with GTX 780s and 1080p monitors that cost less to use, a great option if you don’t need the extra power or just want to browse the&nbsp;web.</p>
-</div>
-<div>
-	<h2>Food&nbsp;&amp;&nbsp;Drink</h2>
-	<p>Our <a class="menu" href="menu.pdf">food menu</a><a class="menu mobile" href="menu-mobile.pdf">food menu</a> is available from <b>11am–9pm</b>, while snacks and drinks are available at all hours. Beer &amp; wine is served from 4pm to&nbsp;close.</p>
-	<p>No outside food or drink is allowed except&nbsp;water.</p>
-</div>
+</menu>
+<main>
+	<div>
+		<h2>Our Space</h2>
+		<p>Access to our venue and board game collection is <b>$5&#8201;/&#8201;person</b>, with a 15% discount for groups of 6+ people. Come by, find a table, and stay for as long as you’d like. The venue fee also grants you a <b>free hour</b> of PC/console access for the same day (expires at&nbsp;closing).</p>
+		<p>Not looking to play games? That’s okay, we make a great study/work space as well, and <a class="menu" href="menu.pdf">food &amp; drink</a><a class="menu mobile" href="menu-mobile.pdf">food &amp; drink</a> is available for&nbsp;purchase.</p>
+	</div>
+	<div>
+		<h2>Digital Entertainment</h2>
+		<p>PC access is <b>$5&#8201;/&#8201;hour</b> — prepaid hours stay on your account so you can come back any time to keep playing. Or you can purchase a day pass for&nbsp;$15.</p>
+		<p>Our Tier 1 PCs have Ryzen 5 5600X processors, GeForce RTX 4070s, and 144Hz 2K monitors. We also have a set of Tier 2 PCs with lower specs that cost less to use, an excellent option if you don’t need the extra power or just want to browse the&nbsp;web.</p>
+	</div>
+	<div>
+		<h2>Food&nbsp;&amp;&nbsp;Drink</h2>
+		<p>Our <a class="menu" href="menu.pdf">food menu</a><a class="menu mobile" href="menu-mobile.pdf">food menu</a> is available from <b>11am–9pm</b>, while snacks and drinks are available at all hours. Beer &amp; wine is served from 4pm to&nbsp;close.</p>
+		<p>No outside food or drink is allowed except&nbsp;water.</p>
+	</div>
+</main>
 </body>
 
 </html>
