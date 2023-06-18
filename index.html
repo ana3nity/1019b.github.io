@@ -56,7 +56,7 @@ header h2 {
 header ul {
 	color: rgba(255,255,255,0.9);
 	margin: -150px 0 0 190px;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
 .address {
@@ -69,7 +69,7 @@ header ul {
 	padding: 3px 6px 4px;
 	border-radius: 5px;
 	text-shadow: none;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
 ul {
@@ -137,7 +137,20 @@ li i {
 	margin: 0 1px;
 }
 
-i.lead {
+.games {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 6px;
+	margin: -4px 0 12px;
+	background: linear-gradient(rgba(255,255,255,0.5),transparent);
+	border-radius: 0 10px 10px 0;
+}
+
+.games a:first-child {
+	font-weight: bold;
+}
+
+.games i {
 	margin: 0 2px 0 0;
 }
 
@@ -147,7 +160,11 @@ i.lead {
 
 menu {
 	float: left;
-	margin: 38px 0 0 200px;
+	margin-top: 38px;
+}
+
+menu ul {
+	padding-left: 200px;
 }
 
 main {
@@ -163,16 +180,17 @@ main {
 	header ul 	{ margin-left: 125px; }
 	.address	{ margin-top: 70px; }
 	h1 			{ background-size: 240px 127px; }
-	menu 		{ margin: 36px 0 0 130px; }
-	main 		{ margin: -110px 20px 0 400px; }
+	menu 		{ margin-top: 36px; }
+	menu ul 	{ padding-left: 130px; }
+	main 		{ margin: -110px 20px 0 410px; }
 }
 
 @media only screen and (max-width: 760px) { 
 	body 		{ padding: 0; }
 	header ul 	{ margin: -180px 0 0 15px; }
 	.address	{ margin-top: 100px; }
-	menu 		{ margin-left: 20px; }
-	main 		{ margin: -130px 20px 0 280px; }
+	menu ul 	{ padding-left: 20px; }
+	main 		{ margin: -130px 20px 0 300px; }
 }
 
 @media only screen and (max-width: 560px) { 
@@ -191,21 +209,32 @@ main {
 	<h2>board game &amp; PC cafe</h2>
 	<ul>
 		<li>open <b>Fri–Sun</b> </span><span>from <b>10am–10pm</b></li>
-		<li class="address"><a href="https://goo.gl/maps/YhnUiPPnEjZb7DD99"><i class="pad fa-solid fa-location-dot"></i> 1019 B St, Hayward, CA</a></li>
+		<li class="address"><a href="https://goo.gl/maps/YhnUiPPnEjZb7DD99"><i class="pad fa-solid fa-location-dot"></i> <b>1019 B St</b>, Hayward, CA</a></li>
 	</ul>
 </header>
 <menu>
-	<ul>
-		<li><a href="mailto:info@kin.fyi">email us at <i class="fa-regular fa-envelope"></i> info@kin.fyi</a></li>
-		<li><a href="sms:+15104043624">text us at (510) 404-3624</a>
-		<li><a href="https://www.instagram.com/kin.hayward/">follow us on <i class="fa-brands fa-instagram"></i> Instagram</a></li>
-		<li><a href="https://discord.gg/VAHctnc">join our <i class="fa-brands fa-discord"></i> Discord</a></li>
+	<ul class="games">
+		<li>
+			<a href="https://tinyurl.com/kincafe-boardgameslibrary"><i class="fa-solid fa-chess-board"></i> board games</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform">reserve a table</a>
+		</li>
+		<li>
+			<a href="https://tinyurl.com/kincafe-pcgameslibrary"><i class="fa-solid fa-computer-mouse" style="padding:0 1px"></i> PC games</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform">reserve a station</a>
+		</li>
+		<li>
+			<a href="https://tinyurl.com/kincafe-calendar"><i class="fa-regular fa-calendar"></i> event calendar</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSeoguYJ8xxRt-LQlENzorQ6ZNOnU7S_qk2ox7KXygLenD4vpQ/viewform">book an event</a>
+		</li>
 	</ul>
 	<ul>
-		<li><a href="https://tinyurl.com/kincafe-boardgameslibrary"><i class="lead fa-solid fa-chess-board"></i> board games</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform">reserve a table</a></li>
-		<li><a href="https://tinyurl.com/kincafe-pcgameslibrary"><i class="lead fa-solid fa-computer-mouse" style="padding:0 1px"></i> PC games</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform">reserve a station</a></li>
-		<li><a href="https://tinyurl.com/kincafe-calendar"><i class="lead fa-regular fa-calendar"></i> event calendar</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoguYJ8xxRt-LQlENzorQ6ZNOnU7S_qk2ox7KXygLenD4vpQ/viewform">book an event</a></li>
-		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScbomZLH8Zr-2TjQEZdkS4BURaPA36GAXKHBNn8-TUngbI3ww/viewform">send us <i class="fa-regular fa-comment-dots"></i> feedback</a></li>
+		<li><a href="https://discord.gg/VAHctnc">join our <i class="fa-brands fa-discord"></i> Discord</a></li>
+		<li><a href="https://www.instagram.com/kin.hayward/">follow our <i class="fa-brands fa-instagram"></i> Instagram</a></li>
+		<li><a href="sms:+15104043624">text us @ 510.404.3624</a>
+		<li>
+			<a href="mailto:info@kin.fyi"><i class="fa-regular fa-envelope"></i> info&#8201;@&#8201;kin.fyi</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScbomZLH8Zr-2TjQEZdkS4BURaPA36GAXKHBNn8-TUngbI3ww/viewform"><i class="fa-regular fa-comment-dots"></i> feedback</a>
+		</li>
 	</ul>
 </menu>
 <main>
