@@ -4,250 +4,230 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./media/site-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/4766bb5ebf.js">
 <title>kin/games</title>
-<script src="https://kit.fontawesome.com/4766bb5ebf.js" crossorigin="anonymous"></script>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	border-radius: 0;
-	outline: none;
-	list-style: none;
-	color: inherit;
-	text-rendering: optimizeLegibility;
-	 -webkit-text-size-adjust: 100%;
-}
-
-a 		{ color: #804000; }
-a:hover,
-a:focus { color: #c06000; }
-
-body {
-	font: 18px/27px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #000;
-	background: #000 url(bg.jpg) center fixed no-repeat;
-	background-size: cover;
-}
-
-header {
-	height: 150px;
-	padding: 0 10px;
-	overflow: visible;
-	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6));
-}
-
-h1 {
-	background: red;
-	background: url(logo-plus.png) left no-repeat;
-	background-size: 360px 190px;
-	height: 190px;
-	margin-bottom: -40px;
-	text-indent: -1000em;
-	overflow: hidden;
-}
-
-header h2 {
-	display: none;
-}
-
-header ul {
-	color: rgba(255,255,255,0.9);
-	margin: -150px 0 0 190px;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
-
-.address {
-	margin-top: 66px;
-}
-
-.address a {
-	background: #fff;
-	text-decoration: none;
-	padding: 3px 6px 4px;
-	border-radius: 5px;
-	text-shadow: none;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
-
-ul {
-	margin-bottom: 16px;
-	line-height: 33px;
-	white-space: nowrap;
-}
-
-menu li>span {
-	color: rgba(255,255,255,0.8);
-	padding: 0;
-}
-
-main {
-	padding-bottom: 20px;
-	margin: -110px 30px 0 500px;
-	max-width: 560px;
-}
-
-div {
-	margin-bottom: 20px;
-	padding: 20px 20px 8px;
-	color: #404040;
-	background: linear-gradient(rgba(255,255,255,0.9),rgba(224,224,224,0.9) 100px);
-	border-radius: 5px;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
-
-h2, p {
-	font-size: inherit;
-	margin-bottom: 0.75em;
-}
-
-div h2 {
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-}
-
-p a,
-p b {
-	font-weight: bold;
-	white-space: nowrap;
-}
-
-menu li>* {
-	padding: 3px 6px 4px;
-	border-radius: 5px;
-}
-
-menu li a {
-	color: rgba(255,255,255,0.9);
-	background: linear-gradient(135deg,rgba(32,32,32,0.9),rgba(128,64,0,0.7));
-	text-decoration: none;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-}
-
-menu li a:hover,
-menu li a:focus {
-	color: #fff;
-	background: rgba(192,96,0,0.9);
-}
-
-li i {
-	margin: 0 1px;
-}
-
-.games {
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-right: 6px;
-	margin: -4px 0 12px;
-	background: linear-gradient(rgba(255,255,255,0.5),transparent);
-	border-radius: 0 10px 10px 0;
-}
-
-.games a:first-child {
-	font-weight: bold;
-}
-
-.games i {
-	margin: 0 2px 0 0;
-}
-
-menu {
-	float: left;
-	margin-top: 38px;
-}
-
-menu ul {
-	padding-left: 200px;
-}
-
-main {
-	max-width: 600px;
-	padding-bottom: 20px;
-	margin: -110px 30px 0 520px;
-}
-
-@media only screen and (max-width: 960px) { 
-	body		{ font-size: 16px; line-height: 24px; }
-	ul 			{ line-height: 30px; }
-	header 		{ height: 130px; margin-bottom: 20px; padding-left: 5px; }
-	header ul 	{ margin-left: 125px; }
-	.address	{ margin-top: 70px; }
-	h1 			{ background-size: 240px 127px; }
-	menu 		{ margin-top: 36px; }
-	menu ul 	{ padding-left: 130px; }
-	main 		{ margin: -110px 20px 0 410px; }
-}
-
-@media only screen and (max-width: 760px) { 
-	body 		{ padding: 0; }
-	header ul 	{ margin: -180px 0 0 15px; }
-	.address	{ margin-top: 100px; }
-	menu ul 	{ padding-left: 20px; }
-	main 		{ margin: -130px 20px 0 300px; }
-}
-
-@media only screen and (max-width: 560px) { 
-	main 		{ clear: left; margin: 0; padding-top: 2px; }
-	main div 	{ border-radius: 0; }
-}
-
-</style>
+<script src="https://kit.fontawesome.com/4766bb5ebf.js" crossorigin="anonymous">
+</script>
 </head>
 
 <body>
-<header>
-	<h1>kin</h1>
-	<h2>board game &amp; PC cafe</h2>
-	<ul>
-		<li>open <b>Fri–Sun</b> </span><span>from <b>10am–10pm</b></li>
-		<li class="address"><a href="https://goo.gl/maps/YhnUiPPnEjZb7DD99"><i class="pad fa-solid fa-location-dot"></i> <b>1019 B St</b>, Hayward, CA</a></li>
-	</ul>
-</header>
-<menu>
-	<ul class="games">
-		<li>
-			<a href="https://tinyurl.com/kincafe-boardgameslibrary"><i class="fa-solid fa-chess-board"></i> board games</a>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform">reserve a table</a>
-		</li>
-		<li>
-			<a href="https://tinyurl.com/kincafe-pcgameslibrary"><i class="fa-solid fa-computer-mouse" style="padding:0 1px"></i> PC games</a>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform">reserve a station</a>
-		</li>
-		<li>
-			<a href="https://tinyurl.com/eventcalendar-kin"><i class="fa-regular fa-calendar"></i> event calendar</a>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSeoguYJ8xxRt-LQlENzorQ6ZNOnU7S_qk2ox7KXygLenD4vpQ/viewform">book an event</a>
-		</li>
-	</ul>
-	<ul>
-		<li><a href="https://discord.gg/VAHctnc">join our <i class="fa-brands fa-discord"></i> Discord</a></li>
-		<li><a href="https://www.instagram.com/kin.hayward/">follow our <i class="fa-brands fa-instagram"></i> Instagram</a></li>
-		<li><a href="sms:+15104043624">text us @ 510.404.3624</a>
-		<li>
-			<a href="mailto:info@kin.fyi"><i class="fa-regular fa-envelope"></i> info&#8201;@&#8201;kin.fyi</a>
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLScbomZLH8Zr-2TjQEZdkS4BURaPA36GAXKHBNn8-TUngbI3ww/viewform"><i class="fa-regular fa-comment-dots"></i> feedback</a>
-		</li>
-	</ul>
-</menu>
+
+<!-- Navigation-->
+<nav class="topnav" id="myTopnav">
+	<div>
+	<img src="./logo-white.png" width="20%" alt="Logo"></div>
+	<div>
+	<a href="#" class="active">Home</a>
+	<a href="#about-us">About Us</a>
+	<a href="#events">Events</a>
+	<a href="#menu">Food & Drink Menu</a>
+	<a href="#contact-us">Contact Us</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  <i class="fa fa-bars"></i>
+	</a>
+</div>
+</nav>
+
+
 <main>
-	<div>
-		<h2>Our Space</h2>
-		<p>Access to our venue and board game collection is <b>$5&#8201;/&#8201;person</b>, with a 15% discount for groups of 6+ people. Come by, find a table, and stay for as long as you’d like. The venue fee also grants you a <b>free hour</b> of PC/console access for the same day (expires at&nbsp;closing).</p>
-		<p>Just need a space to study or get some work done? No problem! Come take advantage of our wifi, power outlets, and all-day <a href="menu.pdf">food menu</a>.</p>
+<!-- Scroll Back To Top Button -->
+<button class="scroll-btn"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #ffffff;"></i></button>
+
+
+	<!-- Hero Section -->
+<header>
+	<section class="container">
+		<div class="row">
+		  <div>
+			<h1>kin games</h1>
+			<p>kin games started in 2016. We are a family-owned board game & PC Cafe located in Downtown Hayward.</p>
+		<img src="./media/outside-venue.png" alt="Photo of Venue from the Outside">  
+	<p style="margin-top: 5%">
+		Open Fri–Sun from 10am–10pm
+<br>Location: 1019 B St, Hayward, CA 94541
+	</p>	
 	</div>
-	<div>
-		<h2>Digital Entertainment</h2>
-		<p>PC access is <b>$5&#8201;/&#8201;hour</b> — prepaid hours stay on your account so you can come back any time to keep playing. Or buy a day pass for only&nbsp;$15.</p>
-		<p>Our Tier 1 PCs have Ryzen 5 5600X processors, GeForce RTX 4070s, and 144Hz 1440p monitors. We also have a set of Tier 2 PCs (GTX 780, 1080p) at a discounted rate, perfect for web browsing or less demanding&nbsp;games.</p>
-	</div>
-	<div>
-		<h2>Food&nbsp;&amp;&nbsp;Drink</h2>
-		<p>Our <a href="menu.pdf">food menu</a> is available from <b>11am–9pm</b>, while snacks and drinks are available at all hours. Beer &amp; wine is served from 4pm to&nbsp;close.</p>
-		<p>No outside food or drink is allowed except&nbsp;water.</p>
-	</div>
+		</div>
+	</section>
+</header>
+
+<!-- Scroll Down Arrow Button -->
+<section id="section04" class="demo">
+	<a href="#about-us"><span></span><i class="fa-solid fa-angle-down fa-2xl" style="color: #000000;"></i></a>
+  </section>
+
+	<!-- About Us -->
+	<section class="container" id="about-us">
+		<h2 class="center" style="margin-top: 25%">About Us</h2>
+		<div class="row">
+		  <div class="one-half column" style="margin-top: 5%">
+			<h3>Our Space</h3>
+			<p>Access to our venue and board game collection is <br><strong>$5 / person</strong>, with a 15% discount for groups of 6+ people. </p>
+		<p>
+			Come by, find a table, and stay for as long as you’d like. The venue fee also grants you a free hour of PC/console access for the same day (expires at closing).
+		</p>  
+		<p>
+			Just need a space to study or get some work done? No problem! Come take advantage of our wifi, power outlets, and all-day food menu
+		</p>
+		</div>
+		<div class="one-half column" style="margin-top: 5%">
+			<h3>Digital Entertainment</h3>
+			<p><strong>PC access is $5 / hour</strong> — prepaid hours stay on your account so you can come back any time to keep playing. 
+				<strong>Buy a day pass for only $15.</strong></p>
+		<p>
+			Our Tier 1 PCs have Ryzen 5 5600X processors, GeForce RTX 4070s, and 144Hz 1440p monitors. We also have a set of Tier 2 PCs (GTX 780, 1080p) at a discounted rate, perfect for web browsing or less demanding games.
+		</p>  
+		</div>
+		</div>
+	</section>
+
+
+	<section class="container">
+		<div class="row">
+		  <div class="center" style="margin-top: 25%">
+			<h2>Games List</h2>
+			<p>Check out our library of games we provide!</p>
+		  </div>
+		  <div class="row center">
+		  <a href="https://airtable.com/appMXhAzGKUXiDwdn/shrYr51f79Dms3E02/tblgwiBN1k3qXtwOQ" target="_blank"><button>Board Games List</button></a>
+		  <a href="https://airtable.com/appEssT9dy0qKyI47/shrlGuveLQaZbHNhC/tblgSqqnl1tEFeReE" target="_blank"><button>PC Games List</button></a>
+		</div>
+		</div>
+		<div class="row center" style="margin-top: 25%">
+			<img src="./media/photo-1.jpg" alt="kin-photo-1" width="200px">
+			<img src="./media/photo-2.jpeg" alt="kin-photo-2" width="200px">
+			<img src="./media/photo-3.jpeg" alt="kin-photo-3" width="200px">
+			<img src="./media/photo-4.jpeg" alt="kin-photo-4" width="200px">
+			<img src="./media/photo-5.jpg" alt="kin-photo-5" width="200px">
+			<img src="./media/photo-6.jpeg" alt="kin-photo-6" width="200px">
+		</div>
+	</section>
+
+<!-- Scroll Down Arrow Button -->
+<section id="section04" class="demo">
+	<a href="#events"><span></span><i class="fa-solid fa-angle-down fa-2xl" style="color: #000000;"></i></a>
+  </section>
+
+			<!-- Events Section -->
+	<section class="container" id="events">
+		<div class="row center">
+		  <div style="margin-top: 25%">
+			<h2>Event Calendar</h2>
+			
+		  </div>
+		  <div><a href="https://calendar.google.com/calendar/u/0/embed?src=a4fb5ee605a0f0a38854632133a6ca14a9867905329b2057d8dc8a6843afd312@group.calendar.google.com&ctz=America/Los_Angeles" target="_blank"><button>Our Event Calendar</button></a></div>
+		  <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSeoguYJ8xxRt-LQlENzorQ6ZNOnU7S_qk2ox7KXygLenD4vpQ/viewform" target="_blank"><button>Book an Event</button></a></div>
+		</div>
+	</section>
+
+<!-- Scroll Down Arrow Button -->
+<section id="section04" class="demo">
+	<a href="#menu"><span></span><i class="fa-solid fa-angle-down fa-2xl" style="color: #000000;"></i></a>
+  </section>
+
+		<!-- Food & Drink Menu Section -->
+	<section class="container" id="menu">
+		<h2 class="center" style="margin-top: 25%">Food & Drink Menu</h2>
+		<div class="row">
+			<div class="one-half column" style="margin-top: 5%">
+				<p>Our food menu is available from 11am–9pm, while snacks and drinks are available at all hours. Beer & wine is served from 4pm to close.</p>
+			<p>
+				No outside food or drink is allowed except water.
+			</p>  
+			<a href="chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/https://kin.fyi/menu.pdf" target="_blank">
+				<button>See Menu</button>
+			</a>
+			</div>
+			<div class="one-half column">
+<img src="./media/food-menu-item.jpeg" width="300px" alt="Food Menu Photo">
+			</div>
+		</div>
+	</section>
+
+<!-- Scroll Down Arrow Button -->
+<section id="section04" class="demo">
+	<a href="#contact-us"><span></span><i class="fa-solid fa-angle-down fa-2xl" style="color: #000000;"></i></a>
+  </section>
+
+			<!-- Contact Us Section -->
+			<section class="container center" id="contact-us">
+				<h2 style="margin-top: 25%">Contact Us</h2>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdvOL3r0ijKIBhyENW2XDlUNvvWTZYsemz2EMfYqh-3tc5gGA/viewform" target="_blank">		
+							<button>Reserve PCs <i class="fa-solid fa-desktop" style="color: #000000;"></i>/Board Game Tables <i class="fa-solid fa-dice" style="color: #000000;"></i></button>
+						</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScbomZLH8Zr-2TjQEZdkS4BURaPA36GAXKHBNn8-TUngbI3ww/viewform" target="_blank">
+						<button>Customer Feedback Form</button>
+					</a>	
+							<button><i class="fa-solid fa-comment-sms" style="color: #000000;"></i>  Text us at 510.404.3824</button>
+
+							<a href="mailto:info@kin.fyi" target="_blank"><button><i class="fa-solid fa-envelope" style="color: #000000;"></i>  Email us at info@kin.fyi</button></a>
+							<a href="https://discord.com/invite/VAHctnc"><button><i class="fa-brands fa-discord" style="color: #000000;"></i>  Join Our Community on Discord!</button></a>
+							<a href="https://www.instagram.com/kin.hayward/"><button><i class="fa-brands fa-instagram" style="color: #000000;"></i>  Follow us on Instagram</button></a>
+
+			</section>
+
+			<!-- Footer Section -->
+	<footer class="container" style="margin-top: 25%;">
+		<p class="center">Copyright &copy; kin games</p>
+	</footer>
+
 </main>
+
+<script>
+/* Navbar */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+	// Scroll to Top Button
+    const button = document.querySelector('.scroll-btn');
+    
+    const displayButton = () => {
+      window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+      
+        if (window.scrollY > 100) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      });
+    };
+    
+    const scrollToTop = () => {
+      button.addEventListener("click", () => {
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        }); 
+        console.log(event);
+      });
+    };
+    
+    displayButton();
+    scrollToTop();
+
+/* Scroll Down Button */
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+</script>
+
 </body>
 
 </html>
